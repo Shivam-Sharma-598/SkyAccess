@@ -37,7 +37,7 @@ body {
   background: white;
   padding: 30px;
   border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .container h1 {
@@ -70,4 +70,20 @@ section ul {
 
 section ul {
   margin-left: 20px;
+}
+
+/*  Tablet Responsive */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+/* Mobile Responsive*/
+
+@media (max-width: 480px) {
+  .container{
+    max-width: 360px;
+  }
 }
