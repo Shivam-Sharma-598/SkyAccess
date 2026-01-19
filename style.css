@@ -18,6 +18,12 @@
     background: linear-gradient(135deg, #4299e1, #3182ce);
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* For All  */
 
 * {
@@ -45,6 +51,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 10rem;
 }
 
 .hero::before {
@@ -62,7 +69,7 @@ body {
     font-size: 3.65rem;
     line-height: 1.2;
     color: #1a365d;
-    margin-top: -5.0rem;
+    margin-top: -3.0rem;
     margin-bottom: 1.5rem;
 }
 
@@ -81,10 +88,13 @@ body {
 .hero-image {
     position: relative;
     animation: float 3s ease-in-out infinite;
+    overflow: hidden;
+    border-radius: 18px;
 }
 
 .hero-dashboard-image {
-    width: 110%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 12px;
@@ -336,11 +346,99 @@ section {
 .same:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px #22198d;
-
 }
 
 .btn-outline {
     background: transparent;
     color: white;
     border: 2px solid white;
+}
+
+/* Responsive Tablet  */
+
+@media (max-width : 1024px) {
+
+    /* Hero Section  */
+
+    .hero-content h1 {
+        font-size: 2.65rem;
+    }
+
+    .hero-image {
+        margin-top: -100px;
+    }
+
+    /* Ready to Build Section  */
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width : 480px) {
+
+    /* Hero Section  */
+
+    .hero {
+        display: block;
+        padding-top: 9.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        margin-top: 50px;
+    }
+
+    /* Key Features Section */
+
+    .section-title {
+        margin-top: -2rem;
+    }
+
+    /* Work Section  */
+
+    .works-grid {
+        display: block;
+    }
+
+    .work-step {
+        margin-bottom: 2rem;
+    }
+
+    .display {
+        padding: 2rem 1rem;
+    }
+
+    .display-image {
+        animation: none;
+    }
+
+    .mockup-header {
+        font-size: 0.8rem;
+    }
+
+    .upload-area {
+        padding: 1.5rem 1rem;
+    }
+
+    .file-item {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .file-item span:last-child {
+        text-align: right;
+    }
+
+    /* Ready to Build Section  */
+
+    .cta-section {
+        margin-top: -4rem;
+    }
+
 }

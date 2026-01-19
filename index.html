@@ -21,7 +21,15 @@
             <div class="cloud-icon"><a href="index.html">☁️</div>
             <span>SkyAccess</span></a>
         </div>
-        <div class="nav-links">
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
             <a href="1-features/features.html">Features</a>
             <a href="2-security/security.html">Security</a>
             <a href="3-docs/docs.html">Docs</a>
@@ -41,10 +49,8 @@
             <p class="hero-tagline">• Reliable</p>
             <p class="hero-tagline">• Scalable</p>
             <div class="hero-buttons">
-                <a href="5-get/get.html" style="text-decoration: none;"><button class="btn btn-primary">Get Started
-                        Free</button></a>
-                <a href="#work" style="text-decoration: none;"><button class="btn btn-secondary">View
-                        Demo</button></a>
+                <a href="5-get/get.html" class="btn btn-primary">Get Started Free</a>
+                <a href="#work" class="btn btn-secondary">View Demo</a>
             </div>
         </div>
 
@@ -188,9 +194,10 @@
     <footer class="footer">
         <div class="footer-container">
 
-            <div class="footer-box map-box">
-                <img src="assets/sky-access-logo.png" alt="" class="logo-img">
+            <div class="footer-box brand">
+                <img src="assets/sky-access-logo.png" alt="SkyAccess Logo" class="logo-img">
                 <h3>SkyAccess</h3>
+                <p>Secure, scalable & simple cloud storage platform.</p>
             </div>
 
             <div class="footer-box">
@@ -207,10 +214,9 @@
             <div class="footer-box">
                 <h3>Contact Us</h3>
                 <span class="underline"></span>
-                <p>Noida</p>
-                <p>Uttar Pradesh (India)</p>
-                <p>Phone : +91 8958151939</p>
-                <p>Email : shivamsharma05092011</p>
+                <p>Noida, Uttar Pradesh (India)</p>
+                <p>Phone: +91 8958151939</p>
+                <p>Email: shivm.tech8@gmail.com</p>
             </div>
 
         </div>
@@ -220,8 +226,8 @@
         </div>
     </footer>
 
-
 </body>
+<script src="znavbar.js"></script>
 <script src="script.js"></script>
 
 </html>
