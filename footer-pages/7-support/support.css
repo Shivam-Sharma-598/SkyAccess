@@ -129,3 +129,19 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/*  Tablet Responsive */
+
+@media (max-width: 1024px) {
+    .container {
+      max-width: 750px;
+    }
+  }
+  
+  /* Mobile Responsive*/
+  
+  @media (max-width: 480px) {
+    .container{
+      max-width: 360px;
+    }
+  }
