@@ -1,3 +1,9 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* NavBar */
 
 .nav-links a.active {
@@ -5,11 +11,11 @@
     font-weight: bold;
 }
 
-/* Header */
 .docs-header {
     text-align: center;
     padding: 5rem 5% 0.5rem;
     /* background: linear-gradient(135deg, #ebf4ff, #dbeafe); */
+    padding-top: 9rem;
 }
 
 .docs-header h1 {
@@ -22,7 +28,6 @@
     color: #4a5568;
 }
 
-/* Content */
 .docs-container {
     max-width: 1000px;
     margin: 3rem auto;
@@ -53,6 +58,7 @@
 }
 
 /* Feature Grid */
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -67,3 +73,18 @@
     font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+
+    .docs-header h1 {
+        margin-top: -1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .docs-header h1 {
+        margin-top: -2.5rem;
+    }
+
+}
