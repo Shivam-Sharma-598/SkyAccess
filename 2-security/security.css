@@ -1,3 +1,9 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* NavBar */
 
 .nav-links a.active {
@@ -15,6 +21,7 @@
     gap: 4rem;
     position: relative;
     overflow: hidden;
+    padding-top: 9rem;
 }
 
 .hero::before {
@@ -121,4 +128,66 @@ section {
     color: #4a5568;
     font-size: 2.2rem;
     margin-bottom: 1rem;
+}
+
+/* Responsive Tablet  */
+
+@media (max-width:1024px) {
+
+    /* Hero Section  */
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    /* Auth Section  */
+
+    #auth {
+        display: block;
+    }
+
+    .auth-card {
+        margin-bottom: 2rem;
+    }
+
+    /* Ready to Build Section  */
+
+    .cta-section {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:480px) {
+
+    /* Hero Section  */
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-top: -2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Auth Section  */
+
+    #auth {
+        display: block;
+        margin-top: -1rem;
+        margin-left: -27.5px;
+    }
+
+    .auth-card {
+        margin-bottom: 2rem;
+        width: 350px;
+        display: block;
+    }
+
+    /* Ready to Build Section  */
+
+    .cta-section {
+        margin-bottom: 3.5rem;
+    }
+
 }
