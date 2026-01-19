@@ -71,3 +71,19 @@ section ul {
 section ul {
   margin-left: 20px;
 }
+
+/*  Tablet Responsive */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+/* Mobile Responsive*/
+
+@media (max-width: 480px) {
+  .container{
+    max-width: 360px;
+  }
+}
