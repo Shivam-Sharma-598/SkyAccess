@@ -1,3 +1,9 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* NavBar */
 
 .nav-links a.active {
@@ -16,6 +22,7 @@
     gap: 4rem;
     position: relative;
     overflow: hidden;
+    padding-top: 9rem;
 }
 
 .hero::before {
@@ -107,4 +114,55 @@ section {
 
 .box-image {
     width: 250px;
+}
+
+/* Responsive Tablet  */
+
+@media (max-width:1024px) {
+
+    /* Hero Section  */
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    /* Auth Section  */
+
+    #auth {
+        display: block;
+    }
+
+    .auth-card {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    /* Hero Section  */
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-top: -3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Auth Section  */
+
+    #auth {
+        display: block;
+        margin-top: -3rem;
+        margin-left: -27.5px;
+    }
+
+    .auth-card {
+        margin-bottom: 2rem;
+        width: 350px;
+        display: block;
+    }
+
 }
